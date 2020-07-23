@@ -1,7 +1,7 @@
 def enterValue(value):
     while not value:
         try:
-            value = int(input("Enter number: "))
+            value = int(input("Enter number: ")) # float values 1.1 is a number too
         except ValueError as e:
             print("Only number pleas, not stroke.", e)
             
@@ -32,7 +32,7 @@ def mathProcess(value_a, operator, value_b):
         equal = value_a * value_b
     else:
         equal = value_a / value_b
-    
+    # add ** please
     return equal
     
     
